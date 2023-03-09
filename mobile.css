@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 
+    2. Remove default margin
+   */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+ */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    font-family: 'Epilogue', sans-serif;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    font-family: 'Epilogue', sans-serif;
+    /* height: 100%; */
+    background: linear-gradient(180deg, #F2F2F2 70%, #F3EDE7 30%);
+}
+
+/* start HEADER */
+.header,
+.nav {
+    width: 343px;
+}
+
+.header {
+    margin-top: 25px;
+    margin-bottom: 56px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_button {
+    background-color: #F2F2F2;
+    border: 1px solid #172339;
+    border-radius: 8px;
+    width: 182px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+}
+
+/* end HEADER */
+
+/* start MAIN */
+.main {
+    width: 343px;
+    height: 1000px;
+    margin-bottom: 237px;
+}
+
+.first {
+    width: 343px;
+    height: 620px;
+    background-image: url('./assets/image-hero-landscape@2x.png'), url('./assets/pattern-curved-line-1.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 343px 240px, 151px 19px;
+    background-position: top 380px left 0, top 0 right 40px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.main_title p {
+    text-align: left;
+    font-size: 38px;
+    line-height: 44px;
+    font-weight: 700;
+    width: 343px;
+    letter-spacing: -0.5px;
+}
+
+.main_title span {
+    font-weight: 400;
+}
+
+.main_title {
+    margin-top: 28px;
+    margin-bottom: 32px;
+}
+
+.main_paragraph p {
+    height: 84px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #49566D;
+    letter-spacing: 0.09px;
+}
+
+.main_paragraph {
+    margin-bottom: 32px;
+}
+
+.main_button {
+    width: 256px;
+    height: 61px;
+    background-color: #172339;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* main second */
+
+.second {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+.static {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.numbers {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #172339;
+}
+
+.p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #49566D;
+    letter-spacing: 2.5px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container {
+    margin-bottom: 56px;
+    width: 100%;
+    height: 748px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #172339;
+    background-image: url('./assets/pattern-curved-line-2.svg');
+    background-repeat: no-repeat;
+    background-position: top 250px right 50%;
+    background-size: 50px 40px;
+    border-radius: 15px;
+}
+
+.jeremy {
+    margin-top: -179px;
+    margin-bottom: 117px;
+}
+
+.footer_title p {
+    color: #FAF8F6;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.footer_title span {
+    font-weight: 400;
+}
+
+.footer_title {
+    margin-bottom: 40px;
+}
+
+.footer_paragraph {
+    color: #F3EDE7;
+    width: 343px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.09px;
+    margin-bottom: 40px;
+}
+
+.person p:nth-child(1) {
+    font-size: 18px;
+    color: #FAF8F6;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.person p:nth-child(2) {
+    font-size: 18px;
+    color: #FAF8F6;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.person {
+    margin-bottom: 64px;
+}
+
+/* last */
+
+.footer_suite {
+    margin-bottom: 33px;
+}
+
+.last_paragraph {
+    margin-bottom: 33px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #49566D;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.images {
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media screen and (min-width:768px) {
+    body {
+        background: linear-gradient(180deg, #F2F2F2 60%, #F3EDE7 40%);
+    }
+
+    .header,
+    .nav {
+        width: 690px;
+    }
+
+    .header {
+        margin-top: 40px;
+        margin-bottom: 92px;
+    }
+
+    .nav_button {
+        border-radius: 6px;
+        width: 219px;
+        height: 56px;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    /* MAIN */
+    .main {
+        width: 690px;
+        height: 650px;
+        margin-bottom: 273px;
+    }
+
+    .first {
+        width: 690px;
+        height: 482px;
+        background-image: url('./assets/pattern-curved-line-1.svg'), url('./assets/image-hero-portrait@2x.png');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 231px 25px, 281px 482px;
+        background-position: top 55px right 234px, top 0px right 0;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main_title p {
+        text-align: left;
+        font-size: 56px;
+        line-height: 64px;
+        font-weight: 700;
+        width: 533px;
+        letter-spacing: -0.78px;
+    }
+
+    .main_title {
+        margin-bottom: 40px;
+    }
+
+    .main_paragraph p {
+        font-size: 16px;
+        width: 350px;
+        line-height: 28px;
+    }
+
+    .main_paragraph {
+        margin-bottom: 40px;
+    }
+
+    .main_button {
+        width: 256px;
+        height: 61px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    /* MAIN SECOND */
+    .second {
+        width: 690px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-top: 88px;
+    }
+
+    .static {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .numbers {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #172339;
+    }
+
+    .p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #49566D;
+        letter-spacing: 2.5px;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+    /* FOOTER */
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 680px;
+    }
+
+    .container {
+        margin-bottom: 80px;
+        width: 690px;
+        height: 684px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #172339;
+        background-image: url('./assets/pattern-curved-line-2.svg');
+        background-repeat: no-repeat;
+        background-position: top 250px right 50%;
+        background-size: 50px 40px;
+        border-radius: 15px;
+    }
+
+    .jeremy {
+        margin-top: -179px;
+        margin-bottom: 117px;
+    }
+
+
+    .footer_title span {
+        font-weight: 400;
+    }
+
+    .footer_title {
+        margin-bottom: 40px;
+    }
+
+    .footer_paragraph {
+        width: 573px;
+    }
+
+    .person p:nth-child(2) {
+        font-size: 16px;
+    }
+
+
+    /* LAST */
+    .footer_suite {
+        margin-bottom: 0px;
+    }
+
+    .last_paragraph {
+        margin-bottom: 0px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #49566D;
+    }
+
+    .last {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 80px;
+        width: 690px;
+        height: 32px;
+    }
+
+    .images {
+        width: 125px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        background: linear-gradient(180deg, #F2F2F2 75%, #F3EDE7 25%);
+    }
+
+    .header,
+    .nav {
+        width: 1110px;
+    }
+
+    .header {
+        margin-top: 50px;
+        margin-bottom: 67px;
+    }
+
+    /* MAIN */
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1100px;
+        height: 600px;
+        margin-bottom: 273px;
+    }
+
+    .first {
+        width: 824px;
+        height: 600px;
+        background-image: url('./assets/pattern-curved-line-1.svg'), url('./assets/image-hero-portrait@2x.png');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 287px 31px, 350px 600px;
+        background-position: top 55px right 222px, top 0px right 0;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .main_title p {
+        text-align: left;
+        font-size: 72px;
+        line-height: 78px;
+        font-weight: 700;
+        width: 665px;
+        letter-spacing: -0.78px;
+    }
+
+    .main_title {
+        margin-bottom: 0px;
+    }
+
+    .main_paragraph p {
+        font-size: 18px;
+        width: 350px;
+        line-height: 32px;
+    }
+
+    .main_paragraph {
+        margin-bottom: 0px;
+    }
+
+    .main_button {
+        width: 256px;
+        height: 61px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    /* SECOND */
+    .second {
+        width: 286px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .static {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+
+
+    /* FOOTER */
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 1110px;
+    }
+
+    .container {
+        margin-bottom: 80px;
+        width: 1110px;
+        height: 546px;
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-evenly;
+        flex-direction: row;
+        background-color: #172339;
+        background-image: url('./assets/pattern-curved-line-2.svg');
+        background-repeat: no-repeat;
+        background-position: top 250px right 50%;
+        background-size: 50px 40px;
+        border-radius: 15px;
+    }
+
+    .netx_to_jeremy {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .jeremy {
+        margin-top: -45px;
+        margin-bottom: 0px;
+    }
+
+
+    .footer_title span {
+        font-weight: 400;
+    }
+
+    .footer_title {
+        height: 56px;
+    }
+
+    .footer_title p {
+        margin-bottom: 40px;
+        font-size: 48px;
+        width: 300px;
+        text-align: left;
+    }
+
+    .footer_paragraph p {
+        font-size: 20px;
+        line-height: 35px;
+
+    }
+
+    .footer_paragraph {
+        width: 350px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .person {
+        text-align: left;
+    }
+
+    .person p:nth-child(2) {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .person p:nth-child(1) {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /* LAST */
+
+    .last {
+        width: 1110px;
+    }
+
+    .main_button:hover {
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+    }
+
+    .nav_button:hover {
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        color: #FAF8F6;
+        background-color: #172339;
+    }
+    .icon:hover{
+        transition: all 0.5s ease-in-out;
+        color: #172339;
+        opacity: 0.5;
+        mix-blend-mode: normal;
+        cursor: pointer;
+    }
+
+
+}
