@@ -114,16 +114,13 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-/* end HEADER */
 
-/* start MAIN */
 .main {
     width: 343px;
-    height: 1000px;
     margin-bottom: 237px;
 }
 
-.first {
+.main_left {
     width: 343px;
     height: 620px;
     background-image: url('./assets/image-hero-landscape@2x.png'), url('./assets/pattern-curved-line-1.svg');
@@ -177,9 +174,8 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-/* main second */
 
-.second {
+.main_rigth {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -207,7 +203,6 @@ body {
     text-transform: uppercase;
 }
 
-/* FOOTER */
 .footer {
     display: flex;
     align-items: center;
@@ -284,7 +279,6 @@ body {
     margin-bottom: 64px;
 }
 
-/* last */
 
 .footer_suite {
     margin-bottom: 33px;
@@ -335,14 +329,13 @@ body {
         line-height: 32px;
     }
 
-    /* MAIN */
     .main {
         width: 690px;
         height: 650px;
         margin-bottom: 273px;
     }
 
-    .first {
+    .main_left {
         width: 690px;
         height: 482px;
         background-image: url('./assets/pattern-curved-line-1.svg'), url('./assets/image-hero-portrait@2x.png');
@@ -385,8 +378,7 @@ body {
         font-weight: 700;
     }
 
-    /* MAIN SECOND */
-    .second {
+    .main_rigth {
         width: 690px;
         display: flex;
         align-items: center;
@@ -416,7 +408,6 @@ body {
         text-transform: uppercase;
     }
 
-    /* FOOTER */
     .footer {
         display: flex;
         align-items: center;
@@ -461,8 +452,6 @@ body {
         font-size: 16px;
     }
 
-
-    /* LAST */
     .footer_suite {
         margin-bottom: 0px;
     }
@@ -507,7 +496,6 @@ body {
         margin-bottom: 67px;
     }
 
-    /* MAIN */
     .main {
         display: flex;
         align-items: center;
@@ -517,7 +505,7 @@ body {
         margin-bottom: 273px;
     }
 
-    .first {
+    .main_left {
         width: 824px;
         height: 600px;
         background-image: url('./assets/pattern-curved-line-1.svg'), url('./assets/image-hero-portrait@2x.png');
@@ -561,8 +549,7 @@ body {
         font-weight: 700;
     }
 
-    /* SECOND */
-    .second {
+    .main_rigth {
         width: 286px;
         height: 500px;
         display: flex;
@@ -578,7 +565,6 @@ body {
     }
 
 
-    /* FOOTER */
     .footer {
         display: flex;
         align-items: center;
@@ -591,7 +577,6 @@ body {
         width: 1110px;
         height: 546px;
         display: flex;
-        /* align-items: center; */
         justify-content: space-evenly;
         flex-direction: row;
         background-color: #172339;
@@ -655,7 +640,6 @@ body {
         text-align: left;
     }
 
-    /* LAST */
 
     .last {
         width: 1110px;
